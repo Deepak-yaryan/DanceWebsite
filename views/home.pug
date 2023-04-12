@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts 
+  script(src="/static/index.js") 
+
+block style 
+    style 
+      include ../static/style.css
+
+block content 
+    section#introSection 
+        div.note Welcome to Deepak's Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+
+    section#missionSection 
+            h2 Our Mission :-
+    div.cards
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="/static/1.jpg", alt="1")
+                    .card-content   
+                        p Step 1 :- Start Feeling the music.
+            div.card
+                h3 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="/static/2.jpg", alt="2")
+                    .card-content   
+                        p Step 2 :- Try to pickup the beats.
+            div.card
+                h3 Expert Teaching
+                div.card-box
+                    div.card-img
+                        img(src="/static/3.jpg", alt="3")
+                    .card-content   
+                        p Step 3 :- Let your body to move with Rythm. 
+
+    section#sponsorsSection 
+        h3 Our Sponsors
+        div#sponsors
+            img(src="/static/logo1.png", alt="sponsors-image" class='spimage')
+            img(src="/static/logo2.png", alt="sponsors-image" class='spimage')
+            img(src="/static/logo3.png", alt="sponsors-image" class='spimage')
+            img(src="/static/logo4.png", alt="sponsors-image" class='spimage')
